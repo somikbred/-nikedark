@@ -84,8 +84,7 @@ body {
 }
 
 li:hover {
-    width: 13px;
-    height: 13px;
+    transform: scale(1.4);
 }
 
 .nike__info {
@@ -106,12 +105,31 @@ li:hover {
 .description {
     width: 80%;
     opacity: 0.54;
-    margin: 30% 0 22% 0;
+    margin: 30% 0 12% 0;
     line-height: 14px;
 }
 
+.stars2 {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    font-size: 0;
+}
+
+.star2 {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/star2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: -1px 0 -13px;
+}
+
 .size, .qty {
-    padding: 0 30px;
+    padding: 0 20px 0 10px;
     background-image: url(../img/Rectangle_2.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -119,10 +137,13 @@ li:hover {
     border-color: #111a28;
     appearance: none;
     -webkit-appearance: none;
-
     color: #e1e1e1;
     font-size: 1.4rem;
     opacity: .8;
+    margin-top: 25px;
+}
+
+.size + .qty {
     margin-left: 5%;
 }
 
@@ -133,10 +154,25 @@ li:hover {
 }
 
 .btn {
+    width: 65%;
+    height: 40px;
     display: block;
     background-color: #111a28;
     border: none;
     color: #e1e1e1;
-    margin: 22% 0 0 25%;
+    margin: 14% 0 0 10%;
     opacity: .8;
+}
+
+.btn:hover {
+    border: 1px solid #e1e1e1;
+    opacity: .8;
+
+}
+.btn:focus,
+.btn:active {
+    border: 1px solid #111a28;
+    color: #111a28;
+    outline: none;
+    transition: .5s ease-in-out;
 }
